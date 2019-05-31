@@ -13,7 +13,7 @@ namespace ClassTest
 
         public Animal()
         {
-            num0fAnimals++;
+
         }
 
         public Animal(string n, string s)
