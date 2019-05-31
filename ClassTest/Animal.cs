@@ -25,7 +25,7 @@ namespace ClassTest
 
         public void MakeSound()
         {
-            Console.WriteLine("{0} says {1} num: {2}", name, sound, GetNum0fAnimals());
+            Console.WriteLine("{0} says {1}", name, sound);
         }
 
         public static int GetNum0fAnimals()

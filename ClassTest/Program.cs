@@ -13,9 +13,11 @@ namespace ClassTest
             Animal cat = new Animal("cat", "nu");
             cat.MakeSound();
 
-            Console.WriteLine("Area of Rect : {0}", ShapeMath.GetArea("Rectangle", 10, 20));
-            Console.WriteLine("Area of Tri : {0}", ShapeMath.GetArea("Triangle", 10, 20));
-            Console.WriteLine("Area of circle : {0}", ShapeMath.GetArea("Circle", 10, 20));
+            Console.WriteLine("Animal num : {0}", Animal.GetNum0fAnimals());
+            Console.WriteLine("=================================");
+            Console.WriteLine("Area of Rect : {0}", ShapeMath.GetArea(enShape.Rectangle, 10, 20));
+            Console.WriteLine("Area of Tri : {0}", ShapeMath.GetArea(enShape.Triangle, 10, 20));
+            Console.WriteLine("Area of circle : {0}", ShapeMath.GetArea(enShape.Circle, 10, 20));
         }
     }
 }
