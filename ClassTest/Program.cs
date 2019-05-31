@@ -1,17 +1,30 @@
 ﻿using System;
-
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 namespace ClassTest
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Animal dog = new Animal("dog", "bow");
+            /*var dog = new Animal("dog", "bow");
             dog.MakeSound();      
-            Animal cow = new Animal("cow","soso");
+            var cow = new Animal("cow","soso");
             cow.MakeSound();
-            Animal cat = new Animal("cat", "nu");
-            cat.MakeSound();
+            var cat = new Animal("cat", "nu");
+            cat.MakeSound();*/
+
+            List<Animal> animals = new List<Animal>();
+            animals.Add(new Animal("dog", "bow"));
+            animals.Add(new Animal("cow", "soso"));
+            animals.Add(new Animal("cat", "nu"));
+
+            foreach(var animal in animals)
+            {
+                animal.MakeSound();
+            }            
 
             Console.WriteLine("Animal num : {0}", Animal.GetNum0fAnimals());
             Console.WriteLine("=================================");
