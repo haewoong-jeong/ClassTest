@@ -181,16 +181,21 @@ namespace ClassTest
             
             sb5.Remove(6, 3);
             Console.WriteLine(sb5.ToString());
-
+            Console.WriteLine("==========================");
             StringBuilder sb6 = new StringBuilder();
             sb6.Append("Kunsan University.");          
+
             TrimEnd(sb6);
             Console.WriteLine(sb6.ToString());
+            //Console.WriteLine(sb6[16]);
         }
 
         public static void TrimEnd(StringBuilder a)
         {
-            a.Length -= 1;
+            if (a.Length == 0) return;
+
+            if (a[a.Length - 1] == '.') { a.Length -= 1; }
+            else return;
         }
 
 
